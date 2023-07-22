@@ -1,0 +1,7 @@
+.agrandar{
+    margin-top: 20px;
+}
+.agrandar:hover{
+   background-color: rgb(5, 160, 243) ;
+   color: bisque;
+}
