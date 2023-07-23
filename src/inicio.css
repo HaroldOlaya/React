@@ -1,0 +1,38 @@
+
+.posicion{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    background-image:linear-gradient(rgb(0, 0, 0), rgba(117, 114, 117, 0.849));
+    color:rgb(247, 252, 252);
+    align-items: center;
+    border-radius: 20px;
+}
+#contenedorPadre {
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+  }
+#contenedorHijo {
+    margin-left: 35%;
+  }
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    background: url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg);
+    background-size: cover;
+  }
+  
+  .firefly {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 0.4vw;
+    height: 0.4vw;
+    margin: -0.2vw 0 0 9.8vw;
+    animation: ease 200s alternate infinite;
+    pointer-events: none;
+  }
