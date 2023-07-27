@@ -23,7 +23,7 @@ export default class Pelicula extends React.Component {
                         <div class="card-body">
                             <h5 class="card-title tamaño">{this.props.nombre}</h5>
                             <div class="d-grid gap-2">
-                                <button type="button" class="btn btn-outline-info"><a href="/Contacto">Mirar</a></button>
+                                <button type="button" class="btn btn-outline-info"><a href="/Contacto">Comprar</a></button>
                                 <button class="btn btn-outline-danger" onClick={this.toggleEsconder}>Eliminar</button>
                             </div>
                         </div>
