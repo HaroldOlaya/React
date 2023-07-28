@@ -9,6 +9,7 @@ export default class Menu extends React.Component {
                                 <button type="button" class="btn btn-outline-Danger"><a href="/">Login</a></button>
                                 <button type="button" class="btn btn-outline-Success"><a href="/Peliculas">Peliculas</a></button>
                                 <button type="button" class="btn btn-outline-Success"><a href="/Api">Usuarios</a></button>
+                                <button type="button" class="btn btn-outline-Success"><a href="/movies">Movies</a></button>
                     </div>
             </div>
         )

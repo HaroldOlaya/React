@@ -5,6 +5,7 @@ import Pelicula from './componentes/Pelicula'
 import Peliculas from './paginas/Peliculas';
 import Inicio from './paginas/Inicio';
 import Contacto from './paginas/Contacto';
+import Movies from './paginas/movies';
 import Api from './paginas/Api';
 import {Routes, Route,BrowserRouter as Router } from 'react-router-dom';
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path='/Peliculas' element={<Peliculas/>}/>
             <Route path='/Contacto' element={<Contacto/>}/>
             <Route path='/Api' element={<Api/>}/>
+            <Route path='/movies' element={<Movies/>}/>
           </Routes>
         </Router>
       </div>
