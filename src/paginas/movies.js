@@ -2,25 +2,23 @@ import React,{setState,useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Table,Button,Container,Modal,ModalBody,ModalHeader,FormGroup,ModalFooter} from 'react-bootstrap';
 
-const data=[
-    {id:1,personaje:'Naruto',anime: 'Naru',archivo:" "},
-    {id:2,personaje:'Naruto',anime: 'Naru',archivo:" "},
-    {id:3,personaje:'Naruto',anime: 'Naru',archivo:" "},
-    {id:4,personaje:'Naruto',anime: 'Naru',archivo:" "},
-    {id:5,personaje:'Naruto',anime: 'Naru',archivo:" "},
-    {id:6,personaje:'Naruto',anime: 'Naru',archivo:" "},
-    {id:7,personaje:'Naruto',anime: 'Naru',archivo:" "},
+var data=[
+    {id:1,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
+    {id:2,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
+    {id:3,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
+    {id:4,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
+    {id:5,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
+    {id:6,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
+    {id:7,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
 ];
-
-
 export default class Movies extends React.Component{
     
         state={
             data:data,
             form:{
                 id:'',
-                personaje:'',
-                anime:''
+                Nombre:'',
+                Categoria:''
             },
             modalInsertar:false,
         };
@@ -58,14 +56,15 @@ export default class Movies extends React.Component{
         var lista=this.state.data;
         lista.map((registro)=>{
             if(dato.id==registro.id){
-                lista[contador].personaje=dato.personaje;
-                lista[contador].anime=dato.anime;
+                lista[contador].Nombre=dato.Nombre;
+                lista[contador].Categoria=dato.Categoria;
                 lista[contador].archivo=dato.archivo;
             }
             contador++;
         });
         this.setState({data:lista});
     }
+
     eliminar=(dato)=>{
   
         var opcion=window.confirm("Desea eliminar el id:"+dato.id);
@@ -84,26 +83,28 @@ export default class Movies extends React.Component{
     }
     render(){
         return(
-            <>  
+            <> 
+
                 <Container>
-                    <br/>
+                    <br/> 
                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                      Insertar nueva
-                    </button>                    <br/><br/>
+                    </button>
+                                       <br/><br/>
                 <Table>
                     <thead><tr>
                     <th>id</th>
-                    <th>personaje</th>
-                    <th>Anime</th>
-                    <th>Pelicula</th>
+                    <th>Nombre</th>
+                    <th>Categoria</th>
+                    <th>Archivo</th>
                     <th>Acciones</th></tr>
                     </thead>
                     <tbody>
                         {this.state.data.map((elemento)=>(
                             <tr>
                                 <td>{elemento.id}</td>
-                                <td>{elemento.personaje}</td>
-                                <td>{elemento.anime}</td>
+                                <td>{elemento.Nombre}</td>
+                                <td>{elemento.Categoria}</td>
                                 <td>{elemento.archivo}</td>
                                 <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#example" onClick={()=>this.editar(elemento)}>Editar</button> {"  "}
                                 <Button variant='danger' onClick={()=>this.eliminar(elemento)}>Eliminar</Button></td>
@@ -130,13 +131,13 @@ export default class Movies extends React.Component{
                             <br/>
                             </div>
                             <div class="form-floating">
-                                <input type="text" name="personaje"class="form-control" id="floatingPassword" onChange={this.handleChange}/>
-                                <label for="floatingPassword">Personaje</label>
+                                <input type="text" name="Nombre"class="form-control" id="floatingPassword" onChange={this.handleChange}/>
+                                <label for="floatingPassword">Nombre</label>
                             </div>
                             <br/>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="anime" id="floatingInput" onChange={this.handleChange}/>
-                                <label for="floatingInput">anime</label>
+                                <input type="text" class="form-control" name="Categoria" id="floatingInput" onChange={this.handleChange}/>
+                                <label for="floatingInput">Categoria</label>
                             </div>
                             <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">./img/</span>
@@ -167,13 +168,13 @@ export default class Movies extends React.Component{
                                 {this.state.form.id}
                             </div>
                             <div class="form-floating">
-                                <input type="text" name="personaje"class="form-control"  onChange={this.handleChange} value={this.state.form.personaje} />
-                                <label for="floatingPassword">Personaje</label>
+                                <input type="text" name="Nombre"class="form-control"  onChange={this.handleChange} value={this.state.form.Nombre} />
+                                <label for="floatingPassword">Nombre</label>
                             </div>
                             <br/>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="anime"  onChange={this.handleChange} value={this.state.form.anime} />
-                                <label for="floatingInput">anime</label>
+                                <input type="text" class="form-control" name="Categoria"  onChange={this.handleChange} value={this.state.form.Categoria} />
+                                <label for="floatingInput">Categoria</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" name="archivo"  onChange={this.handleChange} value={this.state.form.archivo} />

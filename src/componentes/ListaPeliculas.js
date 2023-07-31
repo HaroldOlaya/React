@@ -10,7 +10,7 @@ export default class ListaPeliculas extends React.Component{
         return(
             <>
                 {this.props.peliculas.map((pelicula)=>(
-                    <Pelicula nombre={pelicula.nombre}img={pelicula.img}/>
+                    <Pelicula Nombre={pelicula.Nombre}Categoria={pelicula.Categoria}archivo={pelicula.archivo}/>
                 ))}
             </>
 
