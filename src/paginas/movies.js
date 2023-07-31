@@ -3,16 +3,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Table,Button,Container,Modal,ModalBody,ModalHeader,FormGroup,ModalFooter} from 'react-bootstrap';
 
 var data=[
-    {id:1,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
-    {id:2,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
-    {id:3,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
-    {id:4,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
+    {id:1,Nombre:'Na',Categoria: 'Naru',archivo:" "},
+    {id:2,Nombre:'Na',Categoria: 'Naru',archivo:" "},
+    {id:3,Nombre:'Na',Categoria: 'Naru',archivo:" "},
+    {id:4,Nombre:'Na',Categoria: 'Naru',archivo:" "},
     {id:5,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
     {id:6,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
     {id:7,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
 ];
+
 export default class Movies extends React.Component{
     
+            
         state={
             data:data,
             form:{
@@ -84,6 +86,7 @@ export default class Movies extends React.Component{
     render(){
         return(
             <> 
+            
 
                 <Container>
                     <br/> 
