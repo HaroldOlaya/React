@@ -20,30 +20,30 @@ export default class Api extends React.Component {
         })
     }
     render(){  
-            return(
-                <>
+        return(
+            <>
+            <div>
                 <div>
-                    <div>
-                        {this.state.usuarios.map((usuario)=>( 
-                        <div className="card agrandar tamaño2">
-                            <h3 class="text-center">{usuario.name}</h3>
-                            <div class="card-body">
-                                <h5 class="card-title ">Id:{usuario.id}</h5>
-                                <h5 class="card-title ">Usuario:{usuario.username}</h5>
-                                <h5 class="card-title ">Email:{usuario.email}</h5>
-                            </div>
+                    {this.state.usuarios.map((usuario)=>( 
+                    <div className="card agrandar tamaño2">
+                        <h3 class="text-center">{usuario.name}</h3>
+                        <div class="card-body">
+                            <h5 class="card-title ">Id:{usuario.id}</h5>
+                            <h5 class="card-title ">Usuario:{usuario.username}</h5>
+                            <h5 class="card-title ">Email:{usuario.email}</h5>
                         </div>
-                        ))
-                        }
                     </div>
+                    ))
+                    }
                 </div>
-                </>
-                )   
-            
+            </div>
+            </>
+            )   
         
-        
-    }
-  
+    
+    
+}
+
 }
 
 

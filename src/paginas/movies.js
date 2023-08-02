@@ -12,15 +12,21 @@ var data=[
     {id:7,Nombre:'Naruto',Categoria: 'Naru',archivo:" "},
 ];
 
+
 export default class Movies extends React.Component{
-    
-            
+    constructor(props){
+        super(props);
+       
+              
+    }
+        
         state={
             data:data,
             form:{
                 id:'',
                 Nombre:'',
-                Categoria:''
+                Categoria:'',
+                archivo:''
             },
             modalInsertar:false,
         };
@@ -85,8 +91,7 @@ export default class Movies extends React.Component{
     }
     render(){
         return(
-            <> 
-            
+            <>  
 
                 <Container>
                     <br/> 
@@ -94,6 +99,7 @@ export default class Movies extends React.Component{
                      Insertar nueva
                     </button>
                                        <br/><br/>
+                    
                 <Table>
                     <thead><tr>
                     <th>id</th>
