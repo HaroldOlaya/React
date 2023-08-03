@@ -9,21 +9,27 @@ export default class Pelicula extends React.Component {
     }
     render(){
         return(   
-                <div class='col-3 '>
-                    <div className="card agrandar">
-                        <img src={this.props.archivo} class="card-img-top" alt={this.props.titulo}/>
-                        <div class="card-body">
-                            <h5 class="card-title tamaño">{this.props.titulo}</h5>
-                            <h6 class="card-title tamaño">Genero:{this.props.genero}</h6>
-                            <h6 class="card-title tamaño">Año de grabacion:{this.props.año}</h6>
-                            <h6 class="card-title tamaño">Lanzamiento:{this.props.lanzamiento}</h6>
-
-                            <div class="d-grid gap-2">
-                                <button type="button" class="btn btn-outline-info"><a href="/Contacto">Comprar</a></button>
-                            </div>
+            <>
+            <div className="col-4">
+                <div class='agrandar '>
+                    <div class="myCard ">
+                    <div class="innerCard ">
+                        <div class="frontSide">
+                            <img src={this.props.imagen} class="card-img-top" alt={this.props.titulo}/>
                         </div>
+                        <div class="backSide ">
+                            <h1 class="title ">{this.props.titulo}</h1>
+                            <h4 class="tamaño2 ">Genero:{this.props.genero}</h4>
+                            <p class="title ">Fecha de lanzamiento</p>
+                            <p class="title ">{this.props.lanzamiento}</p>
+                            <button type="button" class="btn btn-outline-info "><a href="/Contacto">Comprar</a></button>
+                        </div>
+                        
+                    </div>
                     </div>
                 </div>
+            </div>
+        </>
         )
     }
 }
