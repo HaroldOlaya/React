@@ -1,6 +1,7 @@
 import React,{setState,useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Table,Button,Container,Modal,ModalBody,ModalHeader,FormGroup,ModalFooter} from 'react-bootstrap';
+import Peliculas from "./Peliculas";
 
 
 var data=[
@@ -895,7 +896,8 @@ export default class Movies extends React.Component{
                 id:'',
                 título:'',
                 géneros:'',
-                lanzamiento:''
+                lanzamiento:'',
+                posterurl:''
             },
             modalInsertar:false,
         };
@@ -921,8 +923,6 @@ export default class Movies extends React.Component{
     insertar=()=>{
         var valorNuevo={...this.state.form};
         valorNuevo.id=this.state.data.length+1;
-        var extension="./img/";
-        valorNuevo.archivo=extension+valorNuevo.archivo;
         var lista=this.state.data;
         lista.push(valorNuevo);
         this.setState({data:lista});
@@ -932,7 +932,7 @@ export default class Movies extends React.Component{
         var contador=0;
         var lista=this.state.data;
         lista.map((registro)=>{
-            if(dato.id==registro.id){
+            if(dato.id===registro.id){
                 lista[contador].título=dato.título;
                 lista[contador].géneros=dato.géneros;
                 lista[contador].lanzamiento=dato.lanzamiento;
@@ -949,8 +949,8 @@ export default class Movies extends React.Component{
             var contador=0;
             var lista=this.state.data;
             lista.map((registro)=>{
-            if(dato.id==registro.id){
-                lista.pop(registro);
+            if(dato.id===registro.id){
+                lista.splice(contador,1);
             }
             contador++;
         });
@@ -959,10 +959,8 @@ export default class Movies extends React.Component{
         
     }
     render(){
-        console.log(this.props)
         return(
             <>  
-
                 <Container>
                     <br/> 
                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -976,6 +974,7 @@ export default class Movies extends React.Component{
                     <th>Titulo</th>
                     <th>Genero</th>
                     <th>Lanzamiento</th>
+                    <th>Url</th>
                     <th>Acciones</th></tr>
                     </thead>
                     <tbody>
@@ -983,8 +982,9 @@ export default class Movies extends React.Component{
                             <tr>
                                 <td>{elemento.id}</td>
                                 <td>{elemento.título}</td>
-                                <td>{elemento.géneros}</td>
+                                <td>{elemento.géneros[0]}</td>
                                 <td>{elemento.lanzamiento}</td>
+                                <td>{elemento.posterurl.slice(0,15)}</td>
                                 <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#example" onClick={()=>this.editar(elemento)}>Editar</button> {"  "}
                                 <Button variant='danger' onClick={()=>this.eliminar(elemento)}>Eliminar</Button></td>
                             </tr>
@@ -1010,17 +1010,19 @@ export default class Movies extends React.Component{
                             <br/>
                             </div>
                             <div class="form-floating">
-                                <input type="text" name="Nombre"class="form-control" id="floatingPassword" onChange={this.handleChange}/>
-                                <label for="floatingPassword">Nombre</label>
+                                <input type="text" name="título"class="form-control" id="floatingPassword" onChange={this.handleChange}/>
+                                <label for="floatingPassword">Titulo</label>
                             </div>
                             <br/>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="Categoria" id="floatingInput" onChange={this.handleChange}/>
-                                <label for="floatingInput">Categoria</label>
+                                <input type="text" class="form-control" name="géneros" id="floatingInput" onChange={this.handleChange}/>
+                                <label for="floatingInput">Genero</label>
                             </div>
                             <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">./img/</span>
-                            <input type="text" class="form-control" placeholder="Nombre del archivo" aria-label="Username" aria-describedby="basic-addon1"name="archivo" onChange={this.handleChange}/>
+                            <input type="date" class="form-control" placeholder="Fecha" aria-label="Username" aria-describedby="basic-addon1"name="lanzamiento" onChange={this.handleChange}/>
+                            </div>
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Link" aria-label="Username" aria-describedby="basic-addon1"name="posterurl" onChange={this.handleChange}/>
                             </div>
    
                         </div>

@@ -4,7 +4,12 @@ import Pelicula from '../componentes/Pelicula';
 import ListaPeliculas from "../componentes/ListaPeliculas";
 import Movies from "./movies";
 
+
+
 export default class Peliculas extends React.Component {
+    constructor(props){
+        super(props);
+    }
     peliculas=[
         {   
             "título": "Pinocho",
@@ -307,7 +312,7 @@ export default class Peliculas extends React.Component {
                 "Guerra"
             ],
             "puntuaciones": [2, 10, 7, 10, 9, 1, 10, 2, 10, 6, 6, 5, 9, 1, 10, 2, 6, 9, 7, 3, 5, 6, 7 , 4, 2, 10, 5, 6, 10, 10],
-            "id": 16,
+            "id":16,
             "lanzamiento": "1943-10-11",
             "titulo original": "",
             "storyline": "En Casablanca durante la Segunda Guerra Mundial, Rick Blaine, un estadounidense exiliado y exluchador por la libertad, dirige el local nocturno más popular de la ciudad. El cínico lobo solitario Blaine se apodera de dos valiosas cartas de tránsito. Cuando llega el comandante nazi Strasser En Casablanca, el adulador Capitán Renault de la policía hace lo que puede para complacerlo, incluida la detención de un líder clandestino checoslovaco, Víctor Laszlo. contra él en París, pero cuando se entera de que ella tenía una buena razón para hacerlo, planean fugarse juntos de nuevo usando las letras de tránsito. Bueno, ese era su plan original... Escrito por\nGary Jackson <garyjack5@cogeco.ca >",
@@ -456,7 +461,7 @@ export default class Peliculas extends React.Component {
             "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_SY500_CR0,0,337,500_AL_.jpg"
         },
         {
-            "title": "Réquiem por un sueño",
+            "título": "Réquiem por un sueño",
             "año": "2000",
             "géneros": [
                 "Drama"
@@ -514,7 +519,7 @@ export default class Peliculas extends React.Component {
             "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYWY5ZjhjNGYtZmI2Ny00ODM0LWFkNzgtZmI1YzA2N2MxMzA0XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SY500_CR0,0,346 ,500_AL_.jpg"
         },
         {
-            "title": "Eterno resplandor de una mente sin recuerdos",
+            "título": "Eterno resplandor de una mente sin recuerdos",
             "año": "2004",
             "géneros": [
                 "Drama",
@@ -582,7 +587,7 @@ export default class Peliculas extends React.Component {
                 "Guerra"
             ],
             "puntuaciones": [9, 9, 7, 1, 4, 9, 3, 6, 3, 3, 7, 8, 5, 10, 7, 3, 2, 5, 6, 2, 8, 7, 7 , 5, 10, 7, 10, 3, 3, 2],
-            "id": 30,
+            "id":30,
             "lanzamiento": "1987-10-02",
             "titulo original": "",
             "argumento": "Una mirada de dos segmentos al efecto de la mentalidad militar y la guerra misma en los marines de la era de Vietnam. La primera mitad sigue a un grupo de reclutas en un campo de entrenamiento bajo el mando del sargento de artillería Hartman. La segunda mitad muestra uno de esos reclutas, Joker, cubriendo la guerra como corresponsal de Stars and Stripes, centrándose en la ofensiva Tet. Escrito por\nScott Renshaw <as.idc@forsythe.stanford.edu>",
@@ -602,7 +607,7 @@ export default class Peliculas extends React.Component {
                 "Drama"
             ],
             "puntuaciones": [3, 9, 6, 8, 2, 4, 5, 1, 9, 6, 1, 3, 2, 1, 10, 4, 4, 2, 5, 9, 6, 5, 10 , 8, 8, 1, 7, 10, 9, 1],
-            "id": "PT161M",
+            "id": 31,
             "lanzamiento": "2016-12-23",
             "titulo original": "",
             "argumento": "Película biográfica de Mahavir Singh Phogat, quien enseñó lucha libre a sus hijas Babita Kumari y Geeta Phogat. Geeta Phogat fue la primera luchadora de la India en ganar en los Juegos de la Commonwealth de 2010, donde ganó la medalla de oro (55 kg) mientras su la hermana Babita Kumari ganó la plata (52 kg). Escrito por\nDibyayan_Chakravorty",
@@ -621,7 +626,7 @@ export default class Peliculas extends React.Component {
                 "Ciencia ficción"
             ],
             "puntuaciones": [8, 5, 10, 2, 8, 1, 1, 1, 2, 3, 5, 2, 5, 2, 5, 7, 7, 1, 6, 4, 9, 4, 9 , 1, 3, 4, 4, 5, 9, 9],
-            "id": 31,
+            "id": 32,
             "lanzamiento": "27-08-1968",
             "originalTitle": "2001: Una odisea del espacio",
             "storyline": "\"2001\" es una historia de evolución. En algún momento del pasado lejano, alguien o algo empujó la evolución al colocar un monolito en la Tierra (presumiblemente también en otras partes del universo). La evolución permitió entonces a la humanidad llegar a la superficie de la luna, donde se encuentra otro monolito, uno que indica a los placeres de monolitos que la humanidad ha evolucionado tanto. Ahora comienza una carrera entre computadoras (HAL) y humanos (Bowman) para llegar a los placeres de monolitos. El ganador logrará el siguiente paso. en evolución, sea lo que sea. Escrito por\nLarry Cousins",
@@ -639,7 +644,7 @@ export default class Peliculas extends React.Component {
                 "Drama"
             ],
             "puntuaciones": [8, 3, 4, 8, 4, 3, 2, 7, 1, 4, 1, 10, 2, 3, 8, 2, 2, 1, 8, 10, 3, 5, 9 , 2, 5, 1, 1, 7, 7, 7],
-            "id": 32,
+            "id": 33,
             "lanzamiento": "2005-11-18",
             "titulo original": "",
             "storyline": "Sadik es uno de los jóvenes rebeldes que ha sido políticamente activo como estudiante universitario y se convirtió en periodista de izquierda en los años 70, a pesar de las expectativas de su padre de que se convirtiera en ingeniero agrónomo y tomara el control de la granja familiar en un pueblo del Egeo. En la madrugada del 12 de septiembre de 1980, cuando un golpe militar despiadado golpea el país, no pueden encontrar acceso a ningún hospital o un médico y su esposa muere mientras da a luz a su único hijo, Deniz. Después de una larga Después de un largo período de tortura, juicios y tiempo en la cárcel, Sadik regresa a su pueblo con Deniz, de 7 u 8 años, sabiendo que será difícil corregir las cosas con su padre, Huseyin. Escrito por\nAli Riza Bolukbasi",
@@ -660,7 +665,7 @@ export default class Peliculas extends React.Component {
                 "Comedia"
             ],
             "puntuaciones": [10, 8, 5, 3, 4, 2, 8, 3, 3, 7, 3, 9, 5, 7, 5, 5, 8, 7, 1, 3, 4, 3, 4 , 10, 9, 1, 4, 2, 1, 1],
-            "id": 33,
+            "id": 34,
             "lanzamiento": "1996-03-08",
             "titulo original": "",
             "storyline": "A un niño pequeño llamado Andy le encanta estar en su habitación, jugar con sus juguetes, especialmente con su muñeco llamado \"Woody\". Pero, ¿qué hacen los juguetes cuando Andy no está con ellos? Cobran vida. Woody cree que tiene la vida (como un juguete) bien. Sin embargo, debe preocuparse por la mudanza de la familia de Andy, y lo que Woody no sabe es sobre la fiesta de cumpleaños de Andy. Woody no se da cuenta de que la madre de Andy le regaló una figura de acción conocida como Buzz Lightyear, que no cree que sea un juguete, se convierte rápidamente en el nuevo juguete favorito de Andy. Woody, que ahora está consumido por los celos, intenta deshacerse de Buzz. Entonces, tanto Woody como Buzz están perdidos. Deben encontrar una forma de volver a Andy antes de que se mude sin ellos, pero tendrán que pasar por un despiadado asesino de juguetes, Sid Phillips.Escrito por\nJohn Wiggins",
@@ -678,7 +683,7 @@ export default class Peliculas extends React.Component {
                 "Occidental"
             ],
             "puntuaciones": [8, 9, 9, 5, 2, 4, 3, 6, 7, 1, 3, 9, 5, 2, 6, 5, 5, 8, 2, 2, 3, 7, 10 , 6, 10, 5, 4, 8, 6, 10],
-            "id": 34,
+            "id": 35,
             "lanzamiento": "1966-11-17",
             "originalTitle": "Por qualche dollaro en pi\u00f9",
             "storyline": "Monco es un asesino a sueldo que persigue a El Indio y su pandilla. Durante su cacería, conoce al Coronel Douglas Mortimer, otro asesino a sueldo, y deciden asociarse, perseguir a los malos juntos y dividir la recompensa. Durante su empresa, habrá muchas balas y situaciones divertidas. Al final, uno de los cazarrecompensas muestra la verdadera intención de su caza. Escrito por\nClaudio Carvalho, Río de Janeiro, Brasil",
@@ -697,7 +702,7 @@ export default class Peliculas extends React.Component {
                 "Drama"
             ],
             "puntuaciones": [7, 5, 1, 10, 9, 1, 8, 10, 10, 3, 9, 3, 6, 9, 1, 4, 8, 5, 5, 4, 5, 7, 4 , 8, 5, 6, 5, 6, 6, 3],
-            "id": 35,
+            "id": 36,
             "lanzamiento": "1984-03-23",
             "titulo original": "",
             "storyline": "Tony Montana logra salir de Cuba durante el éxodo del Mariel de 1980. Se encuentra en un campo de refugiados de Florida, pero su amigo Manny tiene una salida para ellos: emprender un asesinato a sueldo y se harán los arreglos para conseguir un verde Pronto estará trabajando para el narcotraficante Frank López y muestra su valor cuando un trato con narcotraficantes colombianos sale mal. También trae un nuevo nivel de violencia a Miami. Tony protege a su hermana menor, pero su madre sabe lo que él hace por ella. Sin embargo, Tony está impaciente y lo quiere todo, incluido el imperio de Frank y su amante Elvira Hancock. Sin embargo, una vez en la cima, las escandalosas acciones de Tony lo convierten en un objetivo y todo se desmorona. Escrito por\ngarykmcd",
@@ -715,7 +720,7 @@ export default class Peliculas extends React.Component {
                 "Drama"
             ],
             "puntuaciones": [6, 2, 4, 1, 10, 5, 2, 9, 10, 4, 9, 8, 4, 4, 5, 7, 3, 7, 10, 6, 9, 7, 6 , 1, 1, 8, 6, 3, 7, 7],
-            "id": 36,
+            "id": 37,
             "lanzamiento": "2013-04-12",
             "originalTitle": "Jagten",
             "storyline": "Lucas es un maestro de jardín de infantes que cuida mucho a sus alumnos. Desafortunadamente para él, la joven Klara tiene una imaginación desbocada e inventa una mentira sobre su maestro. Antes de que Lucas sea capaz de comprender las consecuencias, tiene convertirse en el marginado de la ciudad. La búsqueda está en marcha para demostrar su inocencia antes de que se lo quiten para siempre. Escrito por\nnapierslogs",
@@ -733,7 +738,7 @@ export default class Peliculas extends React.Component {
                 "Drama"
             ],
             "puntuaciones": [3, 5, 8, 9, 9, 9, 10, 4, 4, 3, 9, 3, 9, 8, 1, 9, 6, 4, 9, 10, 9, 7, 7 , 6, 2, 10, 10, 1, 4, 4],
-            "id": 37,
+            "id": 38,
             "lanzamiento": "1998-03-13",
             "originalTitle": "Buena voluntad de caza",
             "storyline": "Una historia conmovedora de un joven descarriado que lucha por encontrar su identidad, viviendo en un mundo donde puede resolver cualquier problema, excepto el que se está gestando en lo más profundo de sí mismo, hasta que un día conoce a su alma gemela que abre su mente y su corazón. Escrito por\nDima & Danielle",
@@ -752,7 +757,7 @@ export default class Peliculas extends React.Component {
                 "Misterio"
             ],
             "puntuaciones": [10, 3, 5, 7, 8, 3, 5, 7, 5, 8, 6, 10, 2, 10, 4, 1, 5, 6, 4, 5, 2, 4, 1 , 2, 9, 3, 3, 8, 4, 6],
-            "id": 38,
+            "id": 39,
             "lanzamiento": "2011-09-30",
             "originalTitle": "Jodaeiye Nader az Simin",
             "storyline": "Nader (Peyman Moaadi) y Simin (Leila Hatami) discuten sobre vivir en el extranjero. Simin prefiere vivir en el extranjero para brindarle mejores oportunidades a su única hija, Termeh. Sin embargo, Nader se niega a ir porque cree que debe quedarse en Irán y cuidar de su padre (Ali-Asghar Shahbazi), que sufre de Alzheimer. Sin embargo, Simin está decidida a divorciarse y dejar el país con su hija. Escrito por\nAmin Davoodi",
@@ -772,7 +777,7 @@ export default class Peliculas extends React.Component {
                 "Fantasía"
             ],
             "puntuaciones": [1, 1, 4, 9, 1, 6, 7, 9, 5, 4, 8, 4, 4, 6, 9, 7, 5, 8, 6, 3, 9, 3, 1 , 4, 9, 3, 6, 6, 5, 1],
-            "id": 39,
+            "id": 40,
             "lanzamiento": "1989-09-15",
             "originalTitle": "Indiana Jones y la última cruzada",
             "storyline": "Un coleccionista de arte le pide a Jones que se embarque en la búsqueda del Santo Grial. Se entera de que otro arqueólogo ha desaparecido mientras buscaba el preciado cáliz, y el hombre desaparecido es su propio padre, el Dr. Henry Jones. El El artefacto es mucho más difícil de encontrar de lo que esperaban, y sus poderes son demasiado para aquellos de corazón impuro. Escrito por\nJwelch5742",
@@ -790,7 +795,7 @@ export default class Peliculas extends React.Component {
                 "Drama"
             ],
             "puntuaciones": [9, 7, 2, 5, 8, 2, 8, 4, 2, 5, 4, 10, 6, 7, 2, 4, 3, 2, 5, 2, 4, 2, 8 , 9, 10, 2, 4, 3, 5, 3],
-            "id": 40,
+            "id": 41,
             "lanzamiento": "1951-01-15",
             "originalTitle": "Todo sobre Eva",
             "storyline": "Eve (Anne Baxter) está esperando entre bastidores para conocer a su \"ídolo\" envejecida, la estrella de Broadway, Margo Channing (Bette Davis). Todo parece bastante inocente cuando Eve explica que ha visto a Margo en CADA actuación de la la obra actual en la que se encuentra. Solo el crítico de Playright DeWitt (George Sanders) ve a través del malvado plan de Eve, que consiste en tomar sus papeles y su novio, Bill Simpson (Gary Merrill). Cuando el novio no muestra ningún interés, ella intenta convertirse en dramaturga. Hugh Marlowe (Lloyd Richards), pero DeWitt la detiene. Después de aceptar su premio, decide saltarse la fiesta posterior y se va a su habitación, donde encontramos a una joven llamada Phoebe, que se coló en su habitación y se quedó dormida. es donde el \"Círculo de la vida\" ahora llega a buen término, ya que Eve va a ser interpretada de la misma manera que lo hizo con Margo",
@@ -810,7 +815,7 @@ export default class Peliculas extends React.Component {
                 "Suspenso"
             ],
             "puntuaciones": [10, 9, 8, 9, 9, 1, 1, 2, 6, 4, 8, 2, 2, 9, 7, 10, 2, 7, 3, 5, 9, 3, 8 , 6, 6, 3, 2, 10, 1, 3],
-            "id": 41,
+            "id": 42,
             "lanzamiento": "1964-10-28",
             "título original": "Y\u00f4jinb\u00f4",
             "storyline": "Sanjuro, un samurái errante entra en un pueblo rural en el Japón del siglo XIX. Después de enterarse por el posadero de que el pueblo está dividido entre dos gánsteres, enfrenta a uno contra el otro. Sus esfuerzos se ven complicados por la llegada de el astuto Unosuke, el hijo de uno de los gánsteres, que posee un revólver. Unosuke hace que golpeen a Sanjuro después de que reúne a una mujer secuestrada con su esposo e hijo, y luego masacra a los oponentes de su padre. Durante la matanza, el samurái escapa con la ayuda de el posadero; pero mientras se recupera en un templo cercano, se entera del secuestro del posadero por Unosuke, y regresa a la ciudad para enfrentarse a él. Escrito por\nBernard Keane <BKeane2@email.dot.gov.au>",
@@ -829,7 +834,7 @@ export default class Peliculas extends React.Component {
                 "Aventura"
             ],
             "puntuaciones": [2, 5, 2, 8, 1, 2, 9, 5, 10, 3, 7, 7, 7, 4, 8, 2, 10, 6, 6, 3, 7, 8, 3 , 7, 10, 5, 8, 2, 9, 4],
-            "id": 42,
+            "id": 43,
             "lanzamiento": "2005-07-27",
             "titulo original": "",
             "storyline": "Cuando sus padres son asesinados, el playboy multimillonario Bruce Wayne se muda a Asia, donde Henri Ducard y Ra's Al Ghul lo asesoran sobre cómo luchar contra el mal. Al enterarse del plan para acabar con el mal en Gotham City por Ducard, Bruce evita que este plan avance más y regresa a su casa. De vuelta en su entorno original, Bruce adopta la imagen de un murciélago para infundir miedo a los criminales y corruptos como el ícono conocido como 'Batman'. No me quedaré callado por mucho tiempo. Escrito por\nkonstantinwe",
@@ -849,7 +854,7 @@ export default class Peliculas extends React.Component {
                 "Comedia"
             ],
             "puntuaciones": [4, 1, 7, 1, 5, 7, 9, 9, 10, 2, 9, 7, 10, 9, 7, 2, 6, 1, 6, 6, 1, 2, 3 , 5, 2, 7, 5, 10, 7, 5],
-            "id": 43,
+            "id": 44,
             "lanzamiento": "2009-10-16",
             "originalTitle": "Arriba",
             "storyline": "Carl Fredricksen cuando era niño quería explorar América del Sur y encontrar las Cataratas del Paraíso prohibidas. Aproximadamente 64 años después, comienza su viaje junto con un Boy Scout llamado Russel con la ayuda de 500 globos. En su viaje descubren muchos nuevos amigos, incluido un perro que habla y Carl y Russel descubren que alguien tiene planes malvados. Carl pronto se da cuenta de que este malhechor es su ídolo de la infancia. ¿Serán capaces de derrotarlo y encontrarán Paradise Falls?",
@@ -868,7 +873,7 @@ export default class Peliculas extends React.Component {
                 "Romance"
             ],
             "puntuaciones": [5, 5, 7, 5, 2, 7, 2, 8, 4, 6, 2, 1, 4, 5, 2, 8, 2, 1, 1, 8, 5, 8, 9 , 8, 4, 4, 10, 7, 6, 2],
-            "id": 44,
+            "id": 45,
             "lanzamiento": "28-09-1959",
             "originalTitle": "A algunos les gusta lo caliente",
             "storyline": "Cuando dos músicos de Chicago, Joe y Jerry, son testigos de la masacre del Día de San Valentín, quieren salir de la ciudad y alejarse del gángster responsable, Spats Colombo. Están desesperados por conseguir un concierto de la ciudad, pero el único trabajo que conocen es en una banda de chicas que se dirige a Florida. Aparecen en la estación de tren como Josephine y Daphne, las bajistas y saxofonistas de reemplazo. Sin duda, disfrutan estar cerca de las chicas, especialmente de Sugar Kane. Kowalczyk, que canta y toca el ukelele. Joe, en particular, se propone cortejarla, mientras que Jerry/Daphne es cortejada por un millonario, Osgood Fielding III. Se produce caos cuando los dos hombres intentan mantener ocultas sus verdaderas identidades y Spats Colombo y su equipo muestran para una reunión con varios otros señores del crimen. Escrito por\ngarykmcd",
@@ -881,13 +886,13 @@ export default class Peliculas extends React.Component {
         }
         
         
-    ];
-   
+];
     render(){
+        
         return (
             <>  
+                              
                 <ListaPeliculas peliculas={this.peliculas}/>
-                
           </>
             )
 

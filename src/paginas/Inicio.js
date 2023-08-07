@@ -31,7 +31,7 @@ export default class Inicio extends React.Component {
     render(){
         return (
             <div id="contenedorPadre">
-                <div id="contenedorHijo" class="col-4  posicion">
+                <div id="contenedorHijo" class="col-4  posicionlogin">
                     <div className="col-12">
                             <Form onSubmit={this.submmited}>
                                 <Form.Group className="mb-3" controlId="formBasicEmail">

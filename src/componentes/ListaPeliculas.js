@@ -12,9 +12,7 @@ export default class ListaPeliculas extends React.Component{
                 {this.props.peliculas.map((pelicula)=>(
                     <Pelicula titulo={pelicula.título} año={pelicula.año} lanzamiento={pelicula.lanzamiento}genero={pelicula.géneros[0]}imagen={pelicula.posterurl}/>
                 ))}
-                {this.props.peliculas.map((pelicula)=>(
-                    <Movies titulo={pelicula.título} año={pelicula.año} lanzamiento={pelicula.lanzamiento}genero={pelicula.géneros[0]}imagen={pelicula.posterurl}/>
-                ))}
+                
                 
                 
                 

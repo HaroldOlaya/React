@@ -1,5 +1,5 @@
 import React,{ useEffect, useState } from "react";
-import '../componentes/pelicula.css';
+import '../componentes/api.css';
 
 export default class Api extends React.Component {
     constructor(props){
@@ -22,10 +22,10 @@ export default class Api extends React.Component {
     render(){  
         return(
             <>
-            <div>
-                <div>
+            <div className="posicion">
+                <div className="col-12">
                     {this.state.usuarios.map((usuario)=>( 
-                    <div className="card agrandar tamaño2">
+                    <div className="card usuarios">
                         <h3 class="text-center">{usuario.name}</h3>
                         <div class="card-body">
                             <h5 class="card-title ">Id:{usuario.id}</h5>
@@ -45,5 +45,3 @@ export default class Api extends React.Component {
 }
 
 }
-
-
